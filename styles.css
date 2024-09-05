@@ -1,0 +1,11 @@
+.rowGallery {
+    height:300px;
+}
+
+.btnLayout:hover {
+color:blue !important;
+}
+
+.btnLayout.active {
+    color: blue !important; /* Color azul cuando está activo */
+}

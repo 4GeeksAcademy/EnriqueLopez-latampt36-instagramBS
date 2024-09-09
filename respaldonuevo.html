@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c0580d91ae.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <link rel="stylesheet" href="styles.css">
+    <title>Instagram-BS</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+            <a class ="navbar-brand" href="">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </a>
+                  
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-success" data-bs-toggle = "modal" data-bs-target ="#myModal4G">Create a new post</button>
+                        </li>
+                        
+                        <li class="nav-item dropdown px-2 ms-4 ">
+                            <a class="nav-link dropdown-toggle bg-secondary text-white rounded" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gear"> </i>                 
+                            </a>
+                            
+                            <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+        </nav>    
+
+
+         <!-- ROW para los controles de layout-->
+         <div class="row">
+            <div class="col-12  text-center d-flex justify-content-center">
+                <ul class = "nav navbar-brand">
+                    <li class ="nav-item">
+                        <i class="nav-link active fa-solid fa-table-cells px-3 text-dark btnLayout " id="multiplyLayout-tab" data-bs-toggle="tab" data-bs-target="#multiplyLayout" type="button" role="tab" aria-controls="multiplyLayout" aria-selected="true"></i>
+                    </li>
+                    <li class="nav-item">                            
+                        <i class="nav-link fa-solid fa-square px-3 text-dark btnLayout" id="singleLayout-tab" data-bs-toggle="tab" data-bs-target="#singleLayout" type="button" role="tab" aria-controls="singleLayout" aria-selected="true"></i>
+                    </li>
+                </ul>
+            </div> <!-- de la columna col-12 del row-->
+        </div> <!-- del ROW  de los CONTROLES LAYOUT -->
+
+          <!-- Tab panes -->
+        <div class="tab-content d-flex flex-column align-items-center" id="nav-tabContent">
+            <div class="tab-pane active" id="multiplyLayout" role="tabpanel" aria-labelledby="multiplyLayout-tab">
+                <!--INICIA PRIMERA FILA DE LAS IMAGENES-->
+                <div class="row mx-5 my-2 g-0 rowGallery">
+                    <div class="col-12  col-sm-6  col-md-4 h-100 pe-1">
+                        <img src="https://okdiario.com/img/2020/04/23/caracteristicas-y-cuidados-del-perro-labrador-635x358.jpg" class="w-100 h-100 mb-4 object-fit-cover rounded img-fluid" alt="..." >
+                    </div>
+            
+                    <div class="col-12 col-sm-6  col-md-4 mb-3 h-100 pe-1"> <!-- h-100 seria altura de 300px x k ocupa el 100% de su padre en este caso rowGalley-->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTOirbrK7I0kAKu1BtruZ5ArTVLxu9h7vZ1Q&s"     class="w-100 h-100 mb-4 object-fit-cover rounded img-fluid" alt="..." >
+                    </div>
+            
+                    <div class="col-12 col-sm-6  col-md-4 mb-3 h-100 ">
+                        <img src="https://i.blogs.es/dc8f9a/den-harrson-i3-3_zlkttu-unsplash/500_333.jpeg"  class="w-100 h-100 mb-4 object-fit-cover rounded img-fluid" alt="..." >
+                    </div>
+                </div> <!-- fin del div del primer row de imagenes-->
+        
+                <!--INICIA SEGUNDA FILA DE LAS IMAGENES-->
+                <div class="row mx-5 my-1 g-0 rowGallery" >
+                    <div class="col-12 col-sm-6 col-md-4 h-100 pe-1">
+                        <img src="https://static.wikia.nocookie.net/beyonce/images/2/23/Beyonc%C3%A9_%28Portrait%29.jpg/revision/latest?cb=20210925043641&path-prefix=es" class="w-100 h-100 mb-4 object-fit-cover rounded img-fluid" alt="..." >
+                    </div>
+            
+                    <div class="col-12 col-sm-6  col-md-4 mb-3 h-100 pe-1">
+                        <img src="https://www.factorenergia.com/wp-content/uploads/2017/11/Depositphotos_12462950_XL.jpg" class="w-100 h-100 mb-4 object-fit-cover rounded img-fluid" alt="..." >
+                    </div>
+            
+                    <div class="col-12 col-sm-6  col-md-4 mb-3 h-100 ">
+                        <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/04/03171833/Ronaldo-chilena-1-6.jpg"  class="w-100 h-100 mb-4 object-fit-cover rounded img-fluid" alt="..." >
+                    </div>             
+                </div> 
+            
+                <!--Inicia TERCERA Fila de imagenes-->
+                <div class="row mx-5 my-2 g-0 rowGallery">
+                    <div class="col-12 col-sm-6 col-md-4 mb-3 h-100 pe-1">
+                        <img src="https://sermujermamaymuchomas.com/wp-content/uploads/2017/05/7-cosas-que-hace-la-gente-feliz.jpg" class="w-100 h-100 mb-4 object-fit-cover rounded img-fluid" alt="..." >
+                    </div>
+            
+                    <div class="col-12 col-sm-6  col-md-4 mb-3 h-100 pe-1">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIckAWo05yz4r56LnNAeVqAJAmLBEDd3SMRNhlcE6RmD4bbWkLqLPJbr5VpBOnFXriD7SvJIz30nJafAuIfW3zw6JrOP6RAGxEpV0VEIm-wjbG4ljlvF5-ioVKNfvQwrL8qSXe7BMhqHC8/s1600/phpCode.png"  class="w-100 h-100 mb-4 object-fit-cover rounded img-fluid" alt="..." >
+                    </div>
+            
+                    <div class="col-12 col-sm-6 col-md-4 mb-3 h-100">
+                        <img src="https://img.freepik.com/fotos-premium/jovenes-adultos-programando-juntos-evento-hackathon_706399-17099.jpg"  class="w-100 h-100 mb-4 object-fit-cover rounded img-fluid" alt="..." >
+                    </div>
+                </div> <!--termina TERCELA FILA DE IMAGENES-->
+            </div>
+
+            <div class="tab-pane fade " id="singleLayout" role="tabpanel" aria-labelledby="singleLayout-tab">
+                <!--PRIMERA IMAGEN-->
+                <div class="card mb-2" style="width: 36rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h4 class="card-title">My Crazy dog Spark!</h4>
+                        <p>01/09</p>    
+                    </div>
+                    
+                    <div class="card-body">
+                        <img src="https://okdiario.com/img/2020/04/23/caracteristicas-y-cuidados-del-perro-labrador-635x358.jpg" class="card-img-top" alt="...">
+                        <h6>204 likes</h6>
+                        <p class="card-text">The Labrador Retriever or simply Labrador is a British breed of retriever gun dog. It was developed in the United Kingdom from St. John's water dogs imported from the colony of Newfoundland, and was named after the Labrador region of that colony</p>
+                    </div>
+                </div>
+
+                <!--SEGUNDA IMAGEN-->
+                <div class="card mb-2" style="width: 36rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h4 class="card-title">Group study</h4>
+                        <p>02/09</p>    
+                    </div>
+                    
+                    <div class="card-body">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTOirbrK7I0kAKu1BtruZ5ArTVLxu9h7vZ1Q&s" class="card-img-top" alt="...">
+                        <h6>35815 Likes</h6>
+                        <p class="card-text">a group of people joining in the study of a particular topic and usually meeting at scheduled intervals to discuss individual observations, reading, and research</p>
+                    </div>
+                </div>
+
+                <!--TERCERA IMAGEN-->
+                <div class="card mb-2" style="width: 36rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h4 class="card-title">Paradise Beach</h4>
+                        <p>03/09</p>    
+                    </div>
+                    
+                    <div class="card-body">
+                        <img src="https://i.blogs.es/dc8f9a/den-harrson-i3-3_zlkttu-unsplash/500_333.jpeg" class="card-img-top" alt="...">
+                        <h6>26985 Likes</h6>
+                        <p class="card-text">At our beach club, we offer a plethora of activities and amenities to make your visit an unforgettable one. Sip on our tropical drinks and indulge in our delicious Caribbean-inspired cuisine, and let your taste buds take a journey to the tropics</p>
+                    </div>
+                </div>
+
+                <!--CUARTA IMAGEN-->
+                <div class="card mb-2" style="width: 36rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h4 class="card-title">Beyonce</h4>
+                        <p>04/09</p>    
+                    </div>
+                    
+                    <div class="card-body">
+                        <img src="https://static.wikia.nocookie.net/beyonce/images/2/23/Beyonc%C3%A9_%28Portrait%29.jpg/revision/latest?cb=20210925043641&path-prefix=es" class="card-img-top" alt="...">
+                        <h6>12400 likes</h6>
+                        <p class="card-text">Beyoncé Giselle Knowles-Carter is an American singer, songwriter, and businesswoman. Nicknamed "Queen Bey</p>
+                    </div>
+                </div>
+
+                <!--QUINTA IMAGEN-->
+                <div class="card mb-2" style="width: 36rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h4 class="card-title">The greatness of France</h4>
+                        <p>05/09</p>    
+                    </div>
+
+                    <div class="card-body">
+                        <img src="https://www.factorenergia.com/wp-content/uploads/2017/11/Depositphotos_12462950_XL.jpg" class="card-img-top" alt="...">
+                        <h6>18900 likes</h6>
+                        <p class="card-text">The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889 </p>
+                    </div>
+                </div>
+
+                <!--SEXTA IMAGEN-->
+                <div class="card mb-2" style="width: 36rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h4 class="card-title">Cristiano Ronaldo</h4>
+                        <p>06/09</p>    
+                    </div>
+                    
+                    <div class="card-body">
+                        <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/04/03171833/Ronaldo-chilena-1-6.jpg" class="card-img-top" alt="...">
+                        <h6>25600 likes</h6>
+                        <p class="card-text">Cristiano Ronaldo dos Santos Aveiro GOIH ComM is a Portuguese professional footballer who plays as a forward for and captains both Saudi Pro League club Al Nassr and the Portugal national team</p>
+                    </div>
+                </div>
+
+                <!--SEPTIMA IMAGEN-->
+                <div class="card mb-2" style="width: 36rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h4 class="card-title">Happy Families</h4>
+                        <p>07/09</p>    
+                    </div>
+
+                    <div class="card-body">
+                        <img src="https://sermujermamaymuchomas.com/wp-content/uploads/2017/05/7-cosas-que-hace-la-gente-feliz.jpg" class="card-img-top" alt="...">
+                        <h6>31400 likes</h6>
+                        <p class="card-text">Families are made up of different individuals with different needs and, sometimes, different values and beliefs. Happy families are able to show acceptance of these individual difference</p>
+                    </div>
+                </div>
+
+                <!--OCTAVA IMAGEN-->
+                <div class="card" style="width: 36rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h4 class="card-title">Full Stack 4Geeks</h4>
+                        <p>08/09</p>    
+                    </div>
+                    
+                    <div class="card-body">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIckAWo05yz4r56LnNAeVqAJAmLBEDd3SMRNhlcE6RmD4bbWkLqLPJbr5VpBOnFXriD7SvJIz30nJafAuIfW3zw6JrOP6RAGxEpV0VEIm-wjbG4ljlvF5-ioVKNfvQwrL8qSXe7BMhqHC8/s1600/phpCode.png"  class="w-100 h-100 mb-4 object-fit-cover rounded img-fluid" alt="..." >
+                        <h6>62300 likes</h6>
+                        <p class="card-text">Full-stack developers have a high level of competency in both frontend and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS, ExpressJS, Django, and PHP. Equally, full-stack developers understand various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more.</p>
+                    </div>
+                </div>
+
+                <!--NOVENA IMAGEN-->
+                <div class="card" style="width:36rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h4 class="card-title">Hackaton 4G 2024</h4>
+                        <p>09/09</p>    
+                    </div>
+                    
+                    <div class="card-body">
+                        <img src="https://img.freepik.com/fotos-premium/jovenes-adultos-programando-juntos-evento-hackathon_706399-17099.jpg" class="card-img-top" alt="...">
+                        <h6>85200 Likes</h6>
+                        <p class="card-text">A hackathon is an event in which participants collaborate and compete from different locations, in a limited time. The objective is to promote healthy competitiveness, learn to work with external people and have fun while learning.</p>
+                    </div>
+                </div>
+            </div>
+ 
+        </div> 
+
+        <div class="modal" tabindex="-1" id ="myModal4G">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <h5 class="modal-title">Create a new post</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                  <p><strong>Caption:</strong></p>
+                  <textarea class="form-control" aria-label="With textarea" placeholder="Add the caption of your post here"></textarea>
+                
+                        <ul class = "nav navbar-brand">
+                            
+                            <button type="button" class="btn btn-light me-2">
+                                <i class="fa-solid fa-camera" type="button"></i>
+                            </button>
+                            <button type="button" class="btn btn-light me-2">
+                                <i class="fa-solid fa-location-dot" type ="button"></i>              
+                            </button>
+                           
+                        </ul>
+                  
+                  
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div> <!-- de div principal container-fluid-->
+    
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>

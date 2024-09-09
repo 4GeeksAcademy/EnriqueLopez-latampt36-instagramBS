@@ -1,12 +1,9 @@
 .rowGallery {
-    height:300px;
-    background-color: pink;
+      height:300px;  
 }
 
-.rowGallery2 {
-    height:300px;
-    background-color: rgb(193, 192, 255);
-}
+
+
 .btnLayout:hover {
 color:blue !important;
 }
